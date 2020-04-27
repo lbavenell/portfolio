@@ -1,0 +1,343 @@
+/*---------------BASE STYLES---------------*/
+
+
+html{
+  font-size: 16px;
+
+}
+
+body {
+	font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #726E73;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	color: #726E73;
+	font-weight: 700;
+	text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	font-size: 1.75em;
+	line-height: 2em;
+}
+h2 {
+    font-size: 1.65em;
+}
+h3 {
+	font-size: 1.25em;
+}
+h4 {
+	font-size: 1em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.313em;
+  text-align: center;
+  display: inline-block;
+
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.top, .middle,
+.bottom {
+	margin: 0 auto;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.fa-linkedin, .fa-github-alt {
+  font-size: 1.5em;
+  color: #726E73;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.title {
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.title h3 {
+  color: #D98E04;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*---------------HEADER---------------*/
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+header h1 {
+	margin: 10;
+	padding: 0;
+}
+
+header h1 span {
+	color: #D98E04;
+}
+
+#laura-avenell {
+  width: 100%;
+}
+
+/*---------------HEADER NAV---------------*/
+
+header nav {
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	list-style-type: none;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 2.25em;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color:#D98E04;
+}
+
+
+/*---------------MAIN TOP ---------------*/
+
+.main-image {
+	height: 20em;
+	clear: both;
+	background: url("../img/hero-image.jpg") no-repeat 0px 0px;
+	background-size: cover;
+	width: 100%;
+}
+
+.top {
+	height: auto;
+	clear: both;
+  width: 100%;
+}
+
+.top h3 {
+	text-align: center;
+  line-height: 1em;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.top p {
+	padding: 0.625em 0.625em;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.middle p {
+  text-align: left;
+}
+
+/*---------------PORTFOLIO---------------*/
+
+.section-one,
+.section-two,
+.section-three {
+	height: auto;
+	padding: 0.625em 0.625em;
+	width: 90%;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.section-two {
+  border-top: 1px solid #F8DE89;
+  border-bottom: 1px solid #F8DE89;
+}
+
+/*---------------ABOUT---------------*/
+
+#laura-img {
+  width: 100px;
+  float: center;
+}
+
+.laura-img, .about-content {
+  height: auto;
+  padding: 0;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/*---------------CONTACT---------------*/
+
+.bottom {
+  display: inline;
+  width: 100%;
+}
+
+/*---------------FOOTER---------------*/
+
+footer {
+	height: 3.125em;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 90%;
+}
+
+footer span {
+	text-transform: lowercase;
+	color: #D98E04;
+	font-size: 1em;
+}
+
+
+/*--------------Tablet styles here-------------- */
+
+@media all and (min-width:768px) {
+
+
+/*---------------PORTFOLIO---------------*/
+
+.section-one, .section-two, .section-three {
+  width: 30%;
+	padding: .5em;
+}
+
+.section-two {
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #F8DE89;
+  border-right: 1px solid #F8DE89;
+}
+
+/*---------------ABOUT----------------*/
+
+.about-section {
+	width: 90%;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.laura-img, .about-content {
+  width: 75%;
+  padding: .5em;
+
+}
+
+.about-content {
+  float: right;
+}
+
+.laura-img {
+  float: left;
+
+}
+
+header nav {
+	padding: 1em 0;
+	width: 75;
+}
+
+
+}
+
+	/*---------------Desktop styles here--------------- */
+@media all and (min-width:1200px) {
+
+.container {
+		max-width: 1200px;
+	}
+
+header {
+	flex-flow: nowrap;
+  justify-content: space-between;
+	align-items: flex-start;
+  max-width: 1200px;
+
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+	align-items: flex-end;
+  width: 100%;
+}
+
+header nav {
+	padding: 1em 0;
+	width: 100%;
+	text-align: right;
+}
+
+header nav ul li{
+  padding: .5em;
+}
+
+
+#laura-avenell {
+	border-bottom: none;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: auto;
+  padding: .5em;
+}
+
+
+
+}
