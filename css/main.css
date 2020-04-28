@@ -7,13 +7,13 @@ html{
 }
 
 body {
-	font-family: 'Baloo Bhaina 2', cursive;
+  font-family: 'Baloo Bhaina 2', cursive;
   font-size: 1em;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -28,25 +28,27 @@ h2,
 h3,
 h4,
 p {
-	color: #726E73;
-	font-weight: 700;
-	text-align: center;
+  color: #726E73;
+  font-weight: 700;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-	font-size: 1.75em;
-	line-height: 2em;
+  font-size: 3.5em;
+  line-height: 1em;
 }
 h2 {
-    font-size: 1.65em;
+  font-size: 1.5em;
 }
 h3 {
-	font-size: 1.25em;
+	font-size: 2em;
 }
 h4 {
-	font-size: 1em;
+	font-size: 1.25em;
+  margin-top: 0px;
+  line-height: .85em;
 }
 
 p {
@@ -80,7 +82,7 @@ img {
 }
 
 .fa-linkedin, .fa-github-alt {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #726E73;
   display: inline-block;
   text-align: center;
@@ -91,8 +93,6 @@ img {
 .title {
   width: 100%;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 .title h3 {
@@ -100,25 +100,29 @@ img {
   text-transform: uppercase;
   margin: 0px;
   padding: 0px;
+  font-size: 1.5em;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 /*---------------HEADER---------------*/
 
 header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 header h1 {
-	margin: 10;
-	padding: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0px;
 }
 
 header h1 span {
-	color: #D98E04;
+  color: #D98E04;
 }
 
 #laura-avenell {
@@ -128,34 +132,34 @@ header h1 span {
 /*---------------HEADER NAV---------------*/
 
 header nav {
-	padding: 0;
-	width: 100%;
-	text-align: center;
+  padding: 0;
+  width: 100%;
+  text-align: center;
 }
 
 header nav ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
-	text-transform: uppercase;
-	list-style-type: none;
-	font-weight: 700;
-	font-size: 1em;
-	line-height: 2.25em;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 2em;
+  margin:
 }
 
 header nav ul li a {
-	text-decoration: none;
-	color:#D98E04;
+  text-decoration: none;
+  color:#D98E04;
 }
-
 
 /*---------------MAIN TOP ---------------*/
 
-.main-image {
-	height: 20em;
+.hero-image {
+	height: 15em;
 	clear: both;
 	background: url("../img/hero-image.jpg") no-repeat 0px 0px;
 	background-size: cover;
@@ -166,14 +170,15 @@ header nav ul li a {
 	height: auto;
 	clear: both;
   width: 100%;
+
 }
 
 .top h3 {
 	text-align: center;
-  line-height: 1em;
-  width: 70%;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  line-height: .75em;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .top p {
@@ -192,10 +197,10 @@ header nav ul li a {
 .section-two,
 .section-three {
 	height: auto;
-	padding: 0.625em 0.625em;
+	padding: 30px;
 	width: 90%;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1em;
   text-align: center;
 }
 
@@ -208,7 +213,6 @@ header nav ul li a {
 
 #laura-img {
   width: 100px;
-  float: center;
 }
 
 .laura-img, .about-content {
@@ -237,13 +241,15 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	width: 90%;
+	width: 95%;
+  font-size: .9em;
+  padding-top: 50px;
 }
 
 footer span {
 	text-transform: lowercase;
 	color: #D98E04;
-	font-size: 1em;
+	font-size: .9em;
 }
 
 
@@ -291,9 +297,12 @@ footer span {
 
 header nav {
 	padding: 1em 0;
-	width: 75;
+	width: 75px;
 }
 
+.hero-image {
+  height: 30em;
+}
 
 }
 
@@ -301,13 +310,17 @@ header nav {
 @media all and (min-width:1200px) {
 
 .container {
-		max-width: 1200px;
+	max-width: 1200px;
 	}
 
+.hero-image {
+  height: 40em;
+}
+
 header {
-	flex-flow: nowrap;
+  flex-flow: nowrap;
   justify-content: space-between;
-	align-items: flex-start;
+  align-items: flex-start;
   max-width: 1200px;
 
 }
@@ -315,7 +328,7 @@ header {
 header nav ul {
   display: flex;
   justify-content: flex-end;
-	align-items: flex-end;
+  align-items: flex-end;
   width: 100%;
 }
 
@@ -329,6 +342,13 @@ header nav ul li{
   padding: .5em;
 }
 
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.25em;
+}
 
 #laura-avenell {
 	border-bottom: none;
@@ -337,7 +357,5 @@ header nav ul li{
 	flex-basis: auto;
   padding: .5em;
 }
-
-
 
 }
