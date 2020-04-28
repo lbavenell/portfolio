@@ -52,7 +52,7 @@ h4 {
 }
 
 p {
-	font-size: 0.875em;
+	font-size: 1.15em;
 	line-height: 1.313em;
   text-align: center;
   display: inline-block;
@@ -140,6 +140,7 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 header nav ul li {
@@ -148,7 +149,6 @@ header nav ul li {
   font-weight: 700;
   font-size: 1.25em;
   line-height: 2em;
-  margin:
 }
 
 header nav ul li a {
@@ -257,6 +257,20 @@ footer span {
 
 @media all and (min-width:768px) {
 
+/*---------------BASE STYLES---------------*/
+
+
+/*---------------HEADER---------------*/
+
+header nav {
+	padding: 1em 0;
+}
+
+/*----------------MAIN---------------*/
+
+.hero-image {
+  height: 30em;
+}
 
 /*---------------PORTFOLIO---------------*/
 
@@ -281,7 +295,7 @@ footer span {
 }
 
 .laura-img, .about-content {
-  width: 75%;
+  width: 65%;
   padding: .5em;
 
 }
@@ -290,32 +304,30 @@ footer span {
   float: right;
 }
 
-.laura-img {
+#laura-img {
   float: left;
-
+  width: 150px;
 }
 
-header nav {
-	padding: 1em 0;
-	width: 75px;
-}
-
-.hero-image {
-  height: 30em;
-}
 
 }
 
 	/*---------------Desktop styles here--------------- */
 @media all and (min-width:1200px) {
 
+/*---------------BASE STYLES---------------*/
 .container {
 	max-width: 1200px;
 	}
 
-.hero-image {
-  height: 40em;
-}
+  h4 {
+    font-size: 1.5em;
+  }
+
+
+
+/*---------------HEADER---------------*/
+
 
 header {
   flex-flow: nowrap;
@@ -342,13 +354,6 @@ header nav ul li{
   padding: .5em;
 }
 
-h4 {
-  font-size: 1.5em;
-}
-
-p {
-  font-size: 1.25em;
-}
 
 #laura-avenell {
 	border-bottom: none;
@@ -357,5 +362,14 @@ p {
 	flex-basis: auto;
   padding: .5em;
 }
+
+/*---------------MAIN---------------*/
+
+.hero-image {
+  height: 40em;
+}
+
+
+
 
 }
